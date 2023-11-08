@@ -5,8 +5,8 @@ const orderSchema = require("../../../Models/user/orderSchema");
 const createOrderSer = async (req) => {
   return new Promise(async (resolve, reject) => {
     try {
-      let userId = new mongoose.Types.ObjectId(req.loggedInDetails.userId);
-      console.log("L-9, req.body------->", req.body);
+      let userId = new mongoose.Types.ObjectId(req.loggedInDetails._id);
+      console.log("L-9, req.body------->", req.body, userId);
       let { order, phoneNumber, isPaymentOnline, address } = req.body;
       let item = order;
       let user = await userSchema.findOne({ _id: userId });
