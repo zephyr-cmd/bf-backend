@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 const DBCluster = process.env.DATABASE;
 
 // let DB_URL = "mongodb://127.0.0.1:27017/testCode"; //local Machine DB
-let DB_URL = "mongodb+srv://deva:Crazy.xyz@cluster0.lf3ztjv.mongodb.net/";
+let DB_URL = "mongodb+srv://<USERNAME>:<PASSWORD>@cluster0.lf3ztjv.mongodb.net/";
 
 console.log(`DB_URL`, DB_URL);
 
